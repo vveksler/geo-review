@@ -1,0 +1,7 @@
+ul#commentsList
+  each comment in comments
+    li.comments-item
+      span.comments-item__name= comment['name'] 
+      span.comments-item__place= ' ' + comment['place']
+      span.comments-item__date= ' ' + moment(comment['date']).format('DD.MM.YYYY hh:mm:ss')
+      .comments-item__text= comment['text']

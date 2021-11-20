@@ -1,0 +1,85 @@
+.overlay {
+  font-family: "Fira Sans", sans-serif;
+  width: 340px;
+  position: absolute;
+  background: $white;
+  overflow: hidden;
+  border-radius: 2%;
+}
+
+.overlay__content {
+  width: 100%;
+}
+
+.overlay__header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  color: $white;
+  padding: 10px;
+  background-color: $orange;
+}
+
+.overlay__title {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.overlay__close {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.overlay__desc {
+  height: 160px;
+  overflow: auto;
+  margin: 10px;
+}
+
+.overlay__form {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $gray-light;
+}
+
+.overlay__form-title {
+  font-size: 16px;
+  color: $orange;
+  padding: 14px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.overlay__form-textarea {
+  border-color: $gray-dark;
+  border-radius: 10px;
+  height: 100px;
+  margin-bottom: 0;
+}
+
+.overlay__footer {
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.overlay__btn {
+  background-color: $orange;
+  color: $white;
+  border-radius: 6px;
+  font-size: 12px;
+  display: flex;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+  padding: 8.5px 17.5px;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($orange, 5%);
+  }
+}

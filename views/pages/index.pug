@@ -1,0 +1,21 @@
+extends ../template
+
+block content
+  #map
+  
+  script(id='overlayTemplate' type='template')
+    .overlay
+      .overlay__contents
+        .overlay__header
+          .overlay__title
+          .overlay__close x
+        .overlay__desc
+        form(action="/add" method="POST" id='form').overlay__form
+          .overlay__form-title Comment
+          input(type="text" placeholder='Your name' id='name' required).overlay__form-input
+          input(type="text" placeholder='Specify a place' id='place' required).overlay__form-input
+          textarea(name="", cols="30", rows="10" placeholder='Share your impressions' id='text' required).overlay__form-textarea
+          .overlay__footer(for="send-btn")
+            label(for="send-btn")
+              button.visuallyhidden(type='submit' id='send-btn')
+              .overlay__btn Add
