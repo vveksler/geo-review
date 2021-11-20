@@ -1,6 +1,0 @@
-{
-  "script": "server.js",
-  "watch": ["server.js", "views", "api", "config"],
-  "ignore": ["node_modules", "src"],
-  "ext": "js css html pug json"
-}

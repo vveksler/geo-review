@@ -4,37 +4,12 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp",
-    "server": "nodemon --exec babel-node -- server.js"
+    "server": "node server.js"
   },
   "keywords": [],
   "author": "Veksler Vadim",
   "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/node": "^7.4.5",
-    "browser-sync": "^2.23.6",
-    "del": "^3.0.0",
-    "eslint": "^4.8.0",
-    "eslint-config-airbnb-base": "^12.0.2",
-    "eslint-config-prettier": "^2.6.0",
-    "eslint-plugin-import": "^2.7.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^4.1.0",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-nodemon": "^2.5.0",
-    "gulp-plumber": "^1.2.0",
-    "gulp-pug": "^4.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.2.1",
-    "gulp-sass-glob": "^1.0.8",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-webpack": "^1.5.0",
-    "nodemon": "^1.12.1",
-    "sass-module-importer": "^1.4.0",
-    "uglifyjs-webpack-plugin": "^1.0.0-beta.2",
-    "webpack": "^3.6.0"
-  },
+  "devDependencies": {},
   "browserslist": [
     "> 1%",
     "last 2 versions",
@@ -45,9 +20,7 @@
     "express": "^4.16.3",
     "moment": "^2.22.0",
     "mongoose": "^5.0.12",
-    "node-sass": "^6.0.1",
     "normalize.css": "^7.0.0",
-    "pug": "^2.0.3",
-    "ymaps": "^0.2.1"
+    "pug": "^2.0.3"
   }
 }
